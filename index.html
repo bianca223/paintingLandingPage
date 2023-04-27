@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painting Shop Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="./landingPage.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#shop">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Welcome to our Painting Shop</h1>
+        <p>
+          We offer a wide selection of unique and original paintings created by
+          talented artists. Find your perfect piece today!
+        </p>
+        <a href="#shop" class="btn">Shop Now</a>
+      </section>
+      <section class="gallery" id="gallery">
+        <h2>Featured Paintings</h2>
+        <div class="painting-grid">
+          <div class="painting">
+            <img src="./images/painting1.jpg" alt="Painting 1" />
+            <h3>Painting 1</h3>
+            <p>$100</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="painting">
+            <img src="./images/painting2.jpg" alt="Painting 2" />
+            <h3>Painting 2</h3>
+            <p>$200</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="painting">
+            <img src="./images/painting3.jpg" alt="Painting 3" />
+            <h3>Painting 3</h3>
+            <p>$300</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+          Our painting shop was founded in 2005 with the goal of making beautiful
+          art accessible to everyone. We believe that everyone deserves to have
+          something unique and special in their home, and our paintings are the
+          perfect way to achieve that. Our talented artists create each piece
+          with care and attention to detail, ensuring that every painting is a
+          true work of art.
+        </p>
+      </section>
+      <section class="shop" id="shop">
+        <h2>Shop</h2>
+        <div class="product-grid">
+          <div class="product">
+            <img src="./images/painting4.jpg" alt="Painting 4" />
+            <h3>Painting 4</h3>
+            <p>$400</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="./images/painting5.jpg" alt="Painting 5" />
+            <h3>Painting 5</h3>
+            <p>$500</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="./images/painting6.jpg" alt="Painting 6" />
+            <h3>Painting 6</h3>
+            <p>$600</p>
+            <button class="btn">Add to Cart</
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </form>
+        <button type="submit" class="btn" id="submit-button">Send Message</button>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Painting Shop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
